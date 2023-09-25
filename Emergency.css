@@ -43,3 +43,11 @@
     border-radius: 0.25em;
     cursor: pointer;
   }
+
+  .problam{
+
+
+    background-color: slateblue;
+    position: relative;
+    padding-left: 170px;
+  }

@@ -32,6 +32,10 @@ const showLocation = async (position) => {
   let response = await fetch(
     `https://nominatim.openstreetmap.org/reverse?lat=${position.coords.latitude}&lon=${position.coords.longitude}&format=json`
   );
+  const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+    console.log("Latitude: " + latitude);
+    console.log("Longitude: " + longitude);
   //store response object
   let data = await response.json();
   locationDiv.innerText = `${data.address.city}, ${data.address.country}`;
